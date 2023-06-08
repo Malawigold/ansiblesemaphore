@@ -10,8 +10,7 @@
 
 ---
 - hosts: all
-  become: true
-  become_user: ed
+  become: yes
   become_method: sudo
   tasks:
     - name: Update apt repo and cache on all Debian/Ubuntu boxes
