@@ -10,8 +10,8 @@
 
 ---
 - hosts: all
-  become: yes
-  become_method: sudo
+  become: true
+ # become_method: sudo
  # sudo: true
   tasks:
     - name: Update apt repo and cache on all Debian/Ubuntu boxes
