@@ -13,7 +13,6 @@
 - hosts: all
   become: true
   become_method: su
-  remote_user: ed
   
   tasks:
 
