@@ -41,3 +41,9 @@
         post_reboot_delay: 30
         test_command: uptime
       when: reboot_required_file.stat.exists
+
+    - pushover:
+        msg: Servers have been patched successfully
+        app_token: axoxckp9c1qytuw3g3q5qqsyzpq8s7
+        user_key: uyxc83ns5g48w4rxbdpqqyqxz6w8ae
+      delegate_to: localhost
